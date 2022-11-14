@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<!-- ICON -->
+		<link rel="icon" href="img/logo.png">
+		<!-- FONT AWESOME -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"/>
+		<!-- BOOTSWATCH -->
+		<link href="https://bootswatch.com/5/lux/bootstrap.min.css" rel="stylesheet">
+		<title>Chat Aly</title>
+		<style type="text/css" media="screen">
+			.abs-center{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh;
+			}
+		</style>
+	</head>
+	<body class="bg-primary">
+		<div class="container">
+			<div class="abs-center">
+				<div class="col-md-6 col-sm-12">
+					<div class="card text-white bg-primary mb-3">
+						<div class="card-header">
+							<h1 class="text-white"><i class="fab fa-node-js"></i> Chat Aly</h1>
+						</div>
+						<div class="card-body">
+							<main class="join-main">
+								<form action="chat.html">
+									<div class="mb-3">
+										<input type="text" name="username" id="username" placeholder="Nombre de usuario"  class="form-control" required/>
+									</div>
+									<div class="mb-3">
+										<select name="room" id="room" class="form-select form-select-lg mb-3">
+											<option value="General">General</option>
+											<option value="Chismesito">Chismesito</option>
+											<option value="Memes">Memes</option>
+											<option value="Tareas">Tareas</option>
+										</select>
+									</div>
+									<button type="submit" class="btn btn-secondary"><i class="fas fa-sign-in-alt"></i> Ingresar</button>
+								</form>
+							</main>
+						</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

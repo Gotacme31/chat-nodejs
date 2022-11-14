@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICON -->
+	<link rel="icon" href="img/logo.png">
+    <!-- FONT AWESOME -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"/>
+    <!-- BOOTSWATCH -->
+    <link href="https://bootswatch.com/5/lux/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Chat Aly</title>
+</head>
+<body class="bg-primary">
+    <div class="container-xxl bg-primary" style="height: 88vh;">
+        <div class="row h-100">
+            <div class="col-md-12 col-sm-12">
+                <div class="card text-white bg-primary h-100">
+                    <div class="card-header chat-header-styles">
+                        <h1 class="text-light"><i class="fab fa-node-js"></i> Chat Aly</h1>
+                        <a id="leave-btn" class="btn btn-danger"><i class="fas fa-sign-out-alt"></i></a>
+                    </div>
+                    <div class="card-body">
+                        <div class="chat-main h-100">
+                            <!-- BARRA DE CONECTADOS -->
+                            <div class="chat-sidebar p-3">
+                                <h3 class="text-white"><i class="far fa-comments"></i>SALA:</h3>
+                                <h2 class="text-white p-1" id="nombre-sala"></h2>
+                                <h3 class="text-white"><i class="far fa-user"></i> Conectados: </h3>
+                                <ul class="text-white" id="users"></ul>
+                            </div>
+                            <!-- MUESTRA LOS MENSAJES -->
+                            <div class="mensajes-enviados p-3"></div>
+                        </div>
+                        <div class="chat-form-container fixed-bottom">
+                            <form id="texto-mensaje">
+                                <input id="msg" type="text"  class="form-control" placeholder="Escriba su mensaje" required autocomplete="off"/>
+                                <button class="btn btn-success btn-sm"><i class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js" integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4=" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
